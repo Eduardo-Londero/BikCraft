@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bikcraft - Conozca los Productos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="grid-4">
+                <img src="img/svg/logo.svg" alt="">
+            </a>
+            <nav class="grid-12 header_menu">
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a class="ativo" href="contactos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="introducion_interno interno_contato">
+        <div class="container">
+            <h1 data-anime="400" class="fadeInDown">Contacto</h1>
+            <blockquote class="citar-interno">
+            <p data-anime="800" class="fadeInDown">despeja tus dudas con nosotros</p>
+        </div>
+    </header>
+
+    <section data-anime="1200" class="contato container fadeInDown">
+        <form id="contato_form" method="POST" action="enviar.php" class="contato_form grid-8 formphp">
+            <label for="nome">Nombre <span>*</span></label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail <span>*</span></label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefono</label>
+            <input type="text" id="telefone" name="telefone">
+
+            <label class="nao-aparece">Si no eres un robot, déjalo en blanco.</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+            <label class="nao-aparece">Si no es un robot, no cambie este campo.</label>
+            <input type="text" class="nao-aparece" name="dontchange" value="http://">
+            
+            <label for="mensagem">Mensaje <span>*</span></label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="enviar" name="enviar" class="btn" type="submit">Enviar</button>
+        </form>
+        <div class="contato_dados grid-6">
+            <h3>Dados</h3>
+            <span>+ 549 341 9999-999</span>
+            <span>presupuesto@bikcraft.com</span>
+            <span class="last"> Rosario - Argentina
+            </span>
+            <div class="footer_redes">
+                <h3 class="last">Redes Sociales</h3>
+                <ul>
+                    <li><a class="fb" href="http://facebook.com" target="_blank"><img src="img/svg/facebook.svg"></a></li>
+                    <li><a class="in" href="http://instagram.com" target="_blank"><img src="img/svg/instagram.svg"></a></li>
+                    <li><a class="tw" href="http://twitter.com" target="_blank"><img src="img/svg/twitter.svg"></a></li>
+                </ul>
+                </div>
+            </div>
+    </section>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="grid-8 footer_historia" >
+                    <h3>Nuestra historia</h3>
+                    <p>El verdadero secreto de la felicidad radica en tener un interés genuino en cada detalle de la vida cotidiana, literalmente en cada detalle de la vida cotidiana.
+                    </p>
+                </div>
+                <div class="grid-4 footer_contato" >
+                    <h3>Contacto</h3>
+                <ul>
+                    <li>- 549 341 9999-999</li>
+                    <li>- contacto@bikcraft.com</li>
+                    <li>- Rosario - Argentina</li>
+                </ul>
+                </div>
+                <div class="grid-4 footer_redes" >
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a class="fb" href="http://facebook.com" target="_blank"><img src="img/svg/facebook.svg"></a></li>
+                        <li><a class="in" href="http://instagram.com" target="_blank"><img src="img/svg/instagram.svg"></a></li>
+                        <li><a class="tw" href="http://twitter.com" target="_blank"><img src="img/svg/twitter.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <p class="grid-16">BIKCRAFT 2021 - Algunos derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-form.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
